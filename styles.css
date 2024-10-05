@@ -48,7 +48,7 @@ nav {
 }
 
 nav .left a {
-  color: var(--link-color);
+  color: var(--text-color);
   font-size: 22px;
   font-weight: 600;
 }
@@ -82,24 +82,40 @@ nav .right a span {
 
 .hero-section .text {
   flex: 5;
+  padding-right: 20px; /* Adds space between text and the image */
 }
+
 
 .hero-section .text h2 {
   font-size: 45px;
+  width: 500px;
+  margin-bottom: 20px; /* Adds space below the heading */
+}
+.hero-section .text p {
+  font-size: 18px;
+  line-height: 1.8; /* Increases line height for better readability */
+  margin-bottom: 20px; /* Adds space between the paragraphs and links */
+  color: #333; /* Ensures the text color is darker and easier to read */
 }
 
 .hero-section .text .links {
   margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap; /* Ensures buttons wrap correctly on smaller screens */
+  gap: 10px; /* Adds space between buttons */
 }
+
+
 
 .hero-section .text .links a {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 10px 15px;
   border: 2px solid var(--link-color);
   border-radius: 5px;
   margin-right: 10px;
   margin-bottom: 10px;
   transition: .1s;
+  font-size: 16px; /* Slightly larger font for better readability */
 }
 
 .hero-section .text .links a:hover {
@@ -114,8 +130,11 @@ nav .right a span {
 }
 
 .hero-section .headshot img {
-  width: 350px;
-  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%; /* Circular profile image */
+  border: 5px solid #f8f8f8; /* Add a subtle white border around the image */
 }
 
 /* SECTION 2: Skills */
@@ -168,11 +187,18 @@ nav .right a span {
 .testimony-section {
   padding: 0 50px;
   margin-bottom: 100px;
+  background: linear-gradient(120deg, #fdfdfd 0%, #fcfcfc 100%); /* Adds a gradient background */
+  border-radius: 10px; /* Adds rounded corners */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  padding: 50px; 
 }
 
 .testimony-section h2 {
-  font-size: 35px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
   margin-bottom: 30px;
+  color: #333;
 }
 
 .testimony-section .group {
@@ -306,7 +332,7 @@ nav .right a span {
 
 .card-content p {
   font-size: 1em;
-  color: #555;
+  color: var(--text-color);
 }
 
 .buttons {
@@ -327,7 +353,7 @@ nav .right a span {
 }
 
 .buttons .button:hover {
-  background-color: #333;
+  background-color: var(--text-color);
 }
 
 
@@ -363,6 +389,52 @@ nav .right a span {
   .contact-section .group {
     flex-direction: column;
   }
+}
+/* SECTION 3: Projects with images on the right */
+.testimony-section .project {
+  display: flex;
+  justify-content: space-between; /* Ensures image and text are on opposite sides */
+  align-items: flex-start; /* Aligns text and image at the top */
+  margin-bottom: 40px; /* Adds space between project sections */
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+
+.testimony-section .project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-images {
+  display: flex;
+  flex-direction: column; /* Stacks the images vertically */
+  gap: 10px; /* Adds space between the two images */
+}
+
+
+.project-image {
+  width: 220px; /* Adjust the size of the image */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimony-section .project p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: black;
+  flex: 1;
+  margin-left: 20px; /* Adds space between text and images */
+  text-align: justify;
 }
 
 @media (max-width: 600px) {
@@ -411,5 +483,35 @@ nav .right a span {
   /* SECTION 4: Contact */
   .contact-section {
     padding: 0 20px;
+  }
+}body {
+  background-color: #f5f7fa; /* Soft body background to complement the project section */
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .certifications-awards-cards .card {
+    flex-basis: 100%; /* One card per row on smaller screens */
+  }
+
+  .testimony-section {
+    padding: 20px; /* Reduces padding for smaller screens */
+  }
+}
+@media (max-width: 768px) {
+  .testimony-section .project {
+    flex-direction: column; /* Stack image and text vertically on small screens */
+    align-items: center;
+  }
+
+  .project-image {
+    margin-top: 20px; /* Adds space between text and image on small screens */
+    width: 100%;
+    max-width: 300px; /* Maintain a max-width for smaller screens */
+  }
+
+  .testimony-section .project p {
+    text-align: center; /* Centers the text on smaller screens */
+    margin-right: 0; /* Removes right margin on smaller screens */
   }
 }
