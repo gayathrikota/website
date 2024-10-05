@@ -449,6 +449,74 @@ nav .right a span {
   margin-left: 20px; 
   text-align: justify;
 }
+#contact {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+#contact h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+#contact h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.1); 
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.contact-box:hover {
+  box-shadow: 0px 18px 45px rgba(0, 0, 0, 0.2); 
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.contact-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.contact-item a {
+  text-decoration: underline;
+  color: #000;
+  font-size: 18px;
+}
+
+.contact-item:last-child {
+  margin-right: 0; 
+}
+
+
 
 @media (max-width: 600px) {
   /* NAVBAR */
@@ -524,3 +592,4 @@ nav .right a span {
     margin-right: 0; 
   }
 }
+
