@@ -532,7 +532,72 @@ nav .right a span {
 .copy-button:hover {
   background-color: #555;
 }
+/* Clubs & Organizations Section */
+.clubs-organizations-section {
+  padding: 50px;
+  background: #f9f9f9; /* Light background color for contrast */
+  text-align: center;
+}
 
+.clubs-organizations-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.clubs-organizations-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.clubs-organizations-cards .card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  padding: 20px;
+  text-align: left;
+}
+
+.clubs-organizations-cards .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.clubs-organizations-cards .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.clubs-organizations-cards .card-content i {
+  font-size: 2rem;
+  color: #e63946; /* Icon color to match your portfolio’s theme */
+  margin-bottom: 10px;
+}
+
+.clubs-organizations-cards h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.clubs-organizations-cards p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .clubs-organizations-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 @media (max-width: 600px) {
   /* NAVBAR */
