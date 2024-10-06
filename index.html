@@ -14,7 +14,8 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="images/bot.png" type="image/png">
 
-  <title> I'm Gayathri</title>
+
+  <title>Portfolio</title>
  
 </head>
 <body>
@@ -50,8 +51,8 @@
       <div class="text">
         <h2>Hi, I'm Gayathri Kota</h2>
         <p>
-I am a sophomore at Arizona State University, originally from India, with a strong passion for becoming a software engineer. I love working with computers and understanding how technology works. From a young age, I’ve been fascinated by how websites and apps are built, which inspired me to learn programming. Over the years, my interest in computer science has only grown. I enjoy developing software that solves problems and makes life easier. My dream is to work for top companies like Microsoft or Amazon, where I can create software that impacts millions of people. I’m constantly learning new programming languages and improving my skills to be ready for future opportunities. Being a software engineer isn’t just a career goal for me—it’s something I’m truly passionate about, and I’m excited to keep growing and achieving my dreams.
-          </p>
+
+          I am from India, and I’ve always had a strong desire to become a software engineer. I love working with computers and figuring out how things work in the world of technology. From a young age, I’ve been curious about how websites and apps are built, which inspired me to learn programming. My passion for computer science has only grown, and I enjoy creating software that solves problems and makes life easier. My dream is to work at big companies like Microsoft or Amazon, where I can develop software that impacts millions of people. I am constantly learning new programming languages and improving my skills because I want to be ready for opportunities that come my way. Being a software engineer is not just a job for me; it’s something I truly want to do, and I am excited to keep growing and achieving my goals</p>
 
           <div class="links">
             <a href="#skills">
@@ -150,7 +151,7 @@ I am a sophomore at Arizona State University, originally from India, with a stro
 
             <img src="images/lego.jpg" alt="LEGO Mindstorms Project" class="project-image">
           </div>
-          <p><b>Autonomous Robotics Project: </b>Designed and built an autonomous small-scale vehicle using LEGO Mindstorms, combining various technologies to enhance its functionality. MATLAB was used to develop data processing algorithms and control the vehicle’s movement, ensuring smooth and accurate navigation. JavaScript was implemented for a web-based user interface, allowing for real-time monitoring and interaction. The vehicle featured advanced self-driving capabilities, utilizing ultrasonic sensors to detect and avoid obstacles while following a predefined path. This project demonstrated integration of hardware and software to create a functional, real-time autonomous system.
+          <p><b>Raspberry Pi and Autonomous Robotics Projects: </b>Developed a smart jacket using Raspberry Pi, integrating temperature and motion sensors, programmable LEDs, and wireless connectivity, allowing interactive responses to environmental changes and remote customization via a mobile app. Additionally, designed and built an autonomous small-scale vehicle using LEGO Mindstorms, enabling self-driving capabilities with ultrasonic sensors to navigate a predefined path and avoid obstacles in real time.
           </p>
         </div>
         
@@ -233,24 +234,47 @@ I am a sophomore at Arizona State University, originally from India, with a stro
 </section>
 
 
-    <!-- SECTION 4: Contact -->
-  
-    <section id="contact">
-      <h2>Get in Touch</h2>
-      <h1>Contact Me</h1>
-      <div class="contact-wrapper">
-        <div class="contact-box">
-          <div class="contact-item">
-            <img src="/images/mail.jpg" alt="Email Icon" class="contact-icon">
-            <p>gayathrikota2020@gmail.com</p>
-          </div>
-          <div class="contact-item">
-            <img src="/images/linkedin.jpg" alt="LinkedIn Icon" class="contact-icon">
-            <p><a href="https://www.linkedin.com/in/gayathrikota/"target="_blank">LinkedIn</a></p>
-          </div>
-        </div>
+<!-- SECTION 4: Contact -->
+<section id="contact">
+  <h2>Get in Touch</h2>
+  <h1>Contact Me</h1>
+  <div class="contact-wrapper">
+    <div class="contact-box">
+      <!-- Email Section -->
+      <div class="contact-item">
+        <img src="/images/mail.jpg" alt="Email Icon" class="contact-icon">
+        <p>
+          <a href="mailto:gayathrikota2020@gmail.com" id="email-link">gayathrikota2020@gmail.com</a>
+        </p>
+        <button onclick="copyToClipboard('#email-link')" class="copy-button">Copy</button>
       </div>
-    </section>
+      
+      <!-- LinkedIn Section -->
+      <div class="contact-item">
+        <img src="/images/linkedin.jpg" alt="LinkedIn Icon" class="contact-icon">
+        <p><a href="https://www.linkedin.com/in/gayathrikota/" target="_blank">LinkedIn</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Add the JavaScript to enable copying functionality -->
+<script>
+  function copyToClipboard(selector) {
+    var tempInput = document.createElement("input");
+    tempInput.style.position = "absolute";
+    tempInput.style.left = "-9999px";
+    tempInput.value = document.querySelector(selector).innerText;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+    alert("Email address copied!");
+  }
+</script>
+
+
+    
   </main>
    <!-- Footer with Copyright -->
    <footer class="footer">
