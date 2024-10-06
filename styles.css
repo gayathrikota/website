@@ -592,6 +592,66 @@ nav .right a span {
   color: #666;
   line-height: 1.5;
 }
+.experience-section {
+  padding: 40px 0;
+  background-color: #f3f4f6;
+}
+
+.experience-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+  color: #333;
+}
+
+.experience-timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1000px;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 20px 40px;
+  border-left: 3px solid #e63946;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-icon {
+  position: absolute;
+  top: 20px;
+  left: -25px;
+  background-color: #e63946;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.timeline-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.timeline-item:nth-child(odd) {
+  border-left-color: #457b9d;
+}
+
+
+
 @media (max-width: 768px) {
   .clubs-organizations-cards {
     flex-direction: column;
@@ -728,4 +788,5 @@ nav .right a span {
     font-size: 14px;
   }
 }
+
 
