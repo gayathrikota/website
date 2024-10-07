@@ -375,7 +375,7 @@ nav .right a span {
     font-size: 30px;
   }
   .hero-section .text p {
-    font-size: 16px; /* Adjust paragraph font size */
+    font-size: 16px; 
 }
 }
 
@@ -660,7 +660,7 @@ nav .right a span {
 }
 
 @media (max-width: 600px) {
-  /* NAVBAR */
+
   nav {
     padding: 0 20px;
   }
@@ -788,78 +788,56 @@ nav .right a span {
     font-size: 14px;
   }
 }
+
+.timeline-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #e63946;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 20px 40px 20px 120px; 
+  border-left: 3px solid #e63946;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
 @media (max-width: 768px) {
-  .experience-section {
-    padding: 20px;
-  }
-
-  .experience-timeline {
-    padding-left: 0;
-  }
-
   .timeline-item {
-    position: relative;
-    padding: 20px 40px 20px 90px; 
-    border-left: 3px solid #e63946;
-    margin-bottom: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 20px 20px 80px;
   }
-  
 
   .timeline-icon {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color: #e63946;
-    color: white;
-    padding: 15px; 
-    border-radius: 50%;
-    font-size: 2rem; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
+    padding: 10px; 
+    font-size: 1.5rem; 
+    top: 10px; 
+    left: 10px;
   }
+
   .timeline-content {
-    padding-left: 0;
-    text-align: center;
-  }
-
-  .timeline-content h3 {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-  }
-
-  .timeline-content p {
-    font-size: 0.9rem;
-    line-height: 1.4;
+    padding-left: 0; 
   }
 }
 
 @media (max-width: 480px) {
-  .experience-section {
-    padding: 10px;
-  }
-
   .timeline-item {
-    padding: 15px;
-    margin-bottom: 15px;
-  }
-
-  .timeline-content h3 {
-    font-size: 1rem;
-    margin-bottom: 5px;
-  }
-
-  .timeline-content p {
-    font-size: 0.8rem;
-    line-height: 1.3;
+    padding: 15px 15px 15px 60px; 
   }
 
   .timeline-icon {
-    font-size: 1.2rem;
-    padding: 8px;
+    padding: 8px; 
+    font-size: 1.2rem; 
   }
 }
