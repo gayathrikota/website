@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, sans-serif;
   color: var(--text-color);
   background-color: var(--background-color);
   max-width: 1400px;
@@ -69,7 +69,7 @@ nav .right a span {
   margin-left: 5px;
 }
 
-/* SECTION 1: Hero */
+
 .hero-section {
   display: flex;
   justify-content: space-between;
@@ -131,13 +131,17 @@ nav .right a span {
 
 .hero-section .headshot img {
   width: 300px;
-  height: 300px;
+  height: 320px;
   object-fit: cover;
-  border-radius: 50%; 
-  border: 5px solid #f8f8f8; 
+  object-position: top; 
+  border-radius: 50%;
+ 
 }
 
-/* SECTION 2: Skills */
+
+
+
+
 .skills-section {
   padding: 0 50px;
   margin-bottom: 100px;
@@ -146,6 +150,7 @@ nav .right a span {
 .skills-section h2 {
   text-align: center;
   font-size: 35px;
+  margin-bottom: 20px;
 }
 
 .skills-section .text {
@@ -182,7 +187,6 @@ nav .right a span {
 .skills-section .cells .cell span {
   font-size: 18px;
 }
-
 
 .testimony-section {
   padding: 0 50px;
@@ -262,7 +266,7 @@ nav .right a span {
 
 .contact-section .group form input,
 .contact-section .group form textarea {
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, sans-serif; 
   border: 2px solid var(--link-color);
   background-color: transparent;
   padding: 10px;
@@ -272,8 +276,8 @@ nav .right a span {
 }
 
 .contact-section .group form button {
+  font-family: Arial, sans-serif; 
   font-size: 16px;
-  font-family: 'Poppins', sans-serif;
   color: #fff;
   background-color: var(--link-color);
   border: none;
@@ -325,9 +329,9 @@ nav .right a span {
 
 
 .card-content {
-  flex-grow: 1;
-  text-align: center; 
+  font-family: Arial, sans-serif;
 }
+
 
 .card img {
   border-radius: 10px;
@@ -337,9 +341,13 @@ nav .right a span {
 
 .card-content h3 {
   font-size: 1.5em;
-  margin-top: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+ 
 }
-
 .card-content p {
   font-size: 1em;
   color: var(--text-color);
@@ -365,8 +373,6 @@ nav .right a span {
 .buttons .button:hover {
   background-color: var(--text-color);
 }
-
-
 
 
 @media (max-width: 850px) {
@@ -551,6 +557,7 @@ nav .right a span {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  text-align: center;
 }
 
 .clubs-organizations-cards .card {
@@ -560,7 +567,7 @@ nav .right a span {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 300px;
   padding: 20px;
-  text-align: left;
+  text-align: center;
 }
 
 .clubs-organizations-cards .card:hover {
@@ -578,6 +585,7 @@ nav .right a span {
   font-size: 2rem;
   color: #e63946; 
   margin-bottom: 10px;
+  
 }
 
 .clubs-organizations-cards h3 {
@@ -585,7 +593,9 @@ nav .right a span {
   color: #333;
   margin-bottom: 10px;
   font-weight: 600;
+  text-align: center; 
 }
+
 
 .clubs-organizations-cards p {
   font-size: 1rem;
@@ -660,7 +670,7 @@ nav .right a span {
 }
 
 @media (max-width: 600px) {
-
+  /* NAVBAR */
   nav {
     padding: 0 20px;
   }
@@ -786,58 +796,5 @@ nav .right a span {
 
   .contact-item p, .contact-item a {
     font-size: 14px;
-  }
-}
-
-.timeline-icon {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background-color: #e63946;
-  color: white;
-  padding: 15px;
-  border-radius: 50%;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.timeline-item {
-  position: relative;
-  padding: 20px 40px 20px 120px; 
-  border-left: 3px solid #e63946;
-  margin-bottom: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
-@media (max-width: 768px) {
-  .timeline-item {
-    padding: 20px 20px 20px 80px;
-  }
-
-  .timeline-icon {
-    padding: 10px; 
-    font-size: 1.5rem; 
-    top: 10px; 
-    left: 10px;
-  }
-
-  .timeline-content {
-    padding-left: 0; 
-  }
-}
-
-@media (max-width: 480px) {
-  .timeline-item {
-    padding: 15px 15px 15px 60px; 
-  }
-
-  .timeline-icon {
-    padding: 8px; 
-    font-size: 1.2rem; 
   }
 }
