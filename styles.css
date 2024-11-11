@@ -139,9 +139,6 @@ nav .right a span {
 }
 
 
-
-
-
 .skills-section {
   padding: 0 50px;
   margin-bottom: 100px;
@@ -186,6 +183,9 @@ nav .right a span {
 
 .skills-section .cells .cell span {
   font-size: 18px;
+}
+.text {
+  line-height: 1.6; 
 }
 
 .testimony-section {
