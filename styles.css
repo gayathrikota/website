@@ -361,7 +361,7 @@ nav .right a span {
 }
 
 .buttons .button {
-  padding: 10px 20px;
+  padding: 15px 20px;
   background-color: #000;
   color: white;
   border-radius: 5px;
@@ -373,6 +373,15 @@ nav .right a span {
 .buttons .button:hover {
   background-color: var(--text-color);
 }
+
+.skills-section .cells .cell img[src="images/excel.png"],
+.skills-section .cells .cell img[src="images/pandas.png"],
+.skills-section .cells .cell img[src="images/numpy.png"],
+.skills-section .cells .cell img[src="images/Tableau-Logo.png"] {
+  width: 40px;  
+  height: 40px; 
+}
+
 
 
 @media (max-width: 850px) {
@@ -658,6 +667,22 @@ nav .right a span {
 
 .timeline-item:nth-child(odd) {
   border-left-color: #457b9d;
+}
+
+.card .buttons .button {
+  min-width: 100px;
+  text-align: center;
+  padding: 10px 0;
+  flex: 1;
+}
+.card.deans-list-card {
+  width: 360px; 
+}
+
+.card.deans-list-card .button {
+  font-size: 14px;
+  padding: 6px 12px;
+  min-width: 80px;
 }
 
 
