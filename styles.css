@@ -685,6 +685,53 @@ nav .right a span {
   min-width: 80px;
 }
 
+.badges-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.badges-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.badges-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.badge-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.badge-card:hover {
+  transform: translateY(-5px);
+}
+
+.badge-card img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.badge-card h3 {
+  color: #8c4aee;
+  margin-bottom: 10px;
+}
+
+.badge-card p {
+  color: #555;
+  font-size: 0.95em;
+}
 
 
 @media (max-width: 768px) {
@@ -823,3 +870,25 @@ nav .right a span {
     font-size: 14px;
   }
 }
+.timeline-content h3 {
+  margin-bottom: 10px; 
+}
+
+.timeline-content ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+.timeline-content ul li {
+  margin-bottom: 8px; 
+}
+.timeline-content ul {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.timeline-content ul li {
+  margin-bottom: 6px;
+}
+
